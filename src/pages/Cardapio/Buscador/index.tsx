@@ -12,12 +12,13 @@ export default function Buscador({busca, setBusca}: Props) {
     return(
         <div className={styles.buscador}>
             <input
-            value={busca}
-            onChange={event => setBusca(event.target.value)}
+             onChange={event => setBusca(event.target.value)}
+             value={busca}
+             placeholder="Buscar"
             />
             <CgSearch
-            size={20}
-            color="#4C4D5F"
+             size={20}
+             color="#4C4D5F"
             />
 
         </div>
