@@ -10,9 +10,6 @@ export default function Cardapio() {
   const [filtro, setFiltro] = useState<number | null>(null);
   const [ordenador, setOrdenador] = useState("");
 
-
-  
-
   return (
     <main>
       <nav className={styles.menu}>
