@@ -3,6 +3,7 @@ import styles from "./Ordenador.module.scss";
 import opcoes from "./opcoes.json";
 import classNames from "classnames";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
+import { t } from "i18next";
 
 interface Props {
   ordenador: string;
@@ -22,7 +23,7 @@ export default function Ordenador({ ordenador, setOrdenador }: Props) {
       onClick={() => setAberto(!aberto)}
       onBlur={() => setAberto(false)}
     >
-      <span>{nomeOrdenador || "Ordenar por:"}</span>
+      <span>{nomeOrdenador || t('orderLabel')}</span>
       {aberto ? (
         <MdKeyboardArrowUp size={20} />
       ) : (

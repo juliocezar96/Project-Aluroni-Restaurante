@@ -44,6 +44,7 @@ export default function Ites(props: Props) {
       (item) => testaBusca(item.title) && testaFiltro(item.category.id)
     );
     setLista(ordenar(novaLista));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [busca, filtro, ordenador]);
 
   return (
